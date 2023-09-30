@@ -61,9 +61,7 @@ class AdapterSensorPlacement(
             items.addAll(dropdownList) // Add the dropdown items
 
             dropdownListAdapter = ArrayAdapter(
-                SocketFitApplication.getInstance(),
-                android.R.layout.simple_spinner_item,
-                items
+                SocketFitApplication.getInstance(), android.R.layout.simple_spinner_item, items
             )
             dropdownListAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
 

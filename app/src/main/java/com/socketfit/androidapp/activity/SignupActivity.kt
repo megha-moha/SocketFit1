@@ -41,10 +41,7 @@ class SignupActivity : AppCompatActivity() {
             } else {
                 // Create a UserInfo object
                 val userInfo = UserInfo(
-                    email = email,
-                    firstName = firstName,
-                    lastName = lastName,
-                    password = password
+                    email = email, firstName = firstName, lastName = lastName, password = password
                 )
 
                 // Create an Intent to start PersonnelInfoActivity and pass userInfo as an extra

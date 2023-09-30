@@ -45,7 +45,6 @@ class PersonnelInfoActivity : AppCompatActivity() {
                 Toast.makeText(this, "Please fill in all fields", Toast.LENGTH_SHORT).show()
             } else {
                 // All fields are filled, proceed with updating and saving data
-
                 // Update userInfo with the values from the EditText fields
                 userInfo?.heightCm = heightCm
                 userInfo?.weightKg = weightKg
@@ -75,7 +74,6 @@ class PersonnelInfoActivity : AppCompatActivity() {
         backButton.setOnClickListener {
             onBackPressed()
         }
-
     }
 }
 
