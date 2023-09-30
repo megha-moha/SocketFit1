@@ -1,0 +1,25 @@
+
+l
+java:S1450"VRemove the "mParam1" field and declare it as a local variable in the relevant methods.(•Íï‘
+l
+java:S1450"VRemove the "mParam2" field and declare it as a local variable in the relevant methods.(¡ˆ€ 
+M
+java:S1135"2Complete the task associated to this TODO comment.(ÜûŠ—øÿÿÿÿ
+M
+java:S1135"2Complete the task associated to this TODO comment.(ğï¢öúÿÿÿÿ
+M
+java:S1135"2Complete the task associated to this TODO comment.(©ˆÉÕüÿÿÿÿ
+M
+java:S11353"2Complete the task associated to this TODO comment.(ßíŠÿÿÿÿÿ
+A
+java:S1068"+Remove this unused "mParam1" private field.(•Íï‘
+A
+java:S1068"+Remove this unused "mParam2" private field.(¡ˆ€ 
+K
+java:S1068!"6Remove this unused "globalToggleButton" private field.(¡´²)
+C
+java:S1068#"-Remove this unused "statusBar" private field.(±ø‘
+n
+java:S1488K"YImmediately return this expression instead of assigning it to the temporary variable "v".(ÏÚá
+m
+java:S1104 "XMake globalToggle a static final constant or non-public and provide accessors if needed.(ªè]

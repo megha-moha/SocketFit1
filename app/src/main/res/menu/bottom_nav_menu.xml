@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/fragment_dashboard"
+        android:icon="@drawable/dot"
+        android:title="@string/title_dashboard" />
+
+    <item
+        android:id="@+id/navigation_sensor_data"
+        android:icon="@drawable/icon2"
+        android:title="@string/title_sensor_data" />
+
+    <item
+        android:id="@+id/navigation_share"
+        android:icon="@drawable/share"
+        android:title="@string/title_share" />
+
+    <item
+        android:id="@+id/navigation_settings"
+        android:icon="@drawable/settings"
+        android:title="@string/title_settings" />
+
+</menu>

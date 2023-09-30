@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/screen_back"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp">
+
+    <TextView
+        android:id="@+id/tv_screen_heading"
+        style="@style/Widget.TextView.Bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="start"
+        android:text="Sharing"
+        android:textColor="@color/md_theme_dark_scrim"
+        android:textSize="25sp" />
+
+    <RelativeLayout
+        android:id="@+id/materialCardView"
+        style="@style/LayoutBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_screen_heading"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:id="@+id/select_language"
+            style="@style/LayoutBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_health_doctor" />
+
+            <TextView
+                android:id="@+id/tv_content_heading"
+                style="@style/Widget.TextView.Bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:text="Health Sharing"
+                android:textSize="22sp" />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_sub_content_heading"
+            style="@style/Widget.TextView.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/select_language"
+            android:layout_gravity="start"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="You're in control"
+            android:textColor="@color/md_theme_dark_scrim"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/test2"
+            style="@style/Widget.TextView.Regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_sub_content_heading"
+            android:layout_gravity="start"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="2dp"
+            android:gravity="start"
+            android:text="Securely shre your SocketFit pressure data with your clinician or other healthcare professional "
+            android:textColor="@color/md_theme_dark_scrim"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_sub_content_heading1"
+            style="@style/Widget.TextView.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/test2"
+            android:layout_gravity="start"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Private and secure"
+            android:textColor="@color/md_theme_dark_scrim"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/data"
+            style="@style/Widget.TextView.Regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_sub_content_heading1"
+            android:layout_gravity="start"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="2dp"
+            android:gravity="start"
+            android:text="All data shared are de-identified preserve your privacy"
+            android:textColor="@color/md_theme_dark_scrim"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btn_share"
+            style="@style/Widget.TextView.Regular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/data"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/btn_round_blue_bg_circular"
+            android:paddingHorizontal="50dp"
+            android:text="Share with someone"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

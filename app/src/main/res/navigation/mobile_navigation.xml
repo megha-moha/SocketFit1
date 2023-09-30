@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@+id/fragment_dashboard">
+
+    <fragment
+        android:id="@+id/fragment_dashboard"
+        android:name="com.socketfit.androidapp.moduleOne.dashboard.DashboardFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_dashboard" >
+        <action
+            android:id="@+id/action_navigation_dashboard_to_navigation_sensor_data"
+            app:destination="@id/navigation_sensor_data" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_sensor_data"
+        android:name="com.socketfit.androidapp.moduleOne.sensordata.SensorDataFragment"
+        android:label="@string/title_sensor_data"
+        tools:layout="@layout/fragment_sensor_data" />
+
+    <fragment
+        android:id="@+id/navigation_share"
+        android:name="com.socketfit.androidapp.moduleOne.settings.ShareFragment"
+        android:label="@string/title_share"
+        tools:layout="@layout/fragment_share" />
+
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="com.socketfit.androidapp.moduleOne.settings.SettingsFragment"
+        android:label="@string/title_share"
+        tools:layout="@layout/fragment_settings" >
+        <action
+            android:id="@+id/action_navigation_settings_to_sensorPlacementFragment"
+            app:destination="@id/sensorPlacementFragment" />
+        <action
+            android:id="@+id/action_navigation_settings_to_pressureThresholdFragment"
+            app:destination="@id/pressureThresholdFragment" />
+        <action
+            android:id="@+id/action_navigation_settings_to_navigation_share"
+            app:destination="@id/navigation_share" />
+        <action
+            android:id="@+id/action_navigation_settings_to_physicalDescriptionFragment"
+            app:destination="@id/physicalDescriptionFragment" />
+        <action
+            android:id="@+id/action_navigation_settings_to_connectSensorFragment"
+            app:destination="@id/connectSensorFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sensorPlacementFragment"
+        android:name="com.socketfit.androidapp.fragment.SensorPlacementFragment"
+        android:label="SensorPlacementFragment" />
+    <fragment
+        android:id="@+id/pressureThresholdFragment"
+        android:name="com.socketfit.androidapp.moduleOne.settings.fragment.PressureThresholdFragment"
+        android:label="PressureThresholdFragment" />
+    <fragment
+        android:id="@+id/physicalDescriptionFragment"
+        android:name="com.socketfit.androidapp.moduleOne.settings.fragment.PhysicalDescriptionFragment"
+        android:label="PhysicalDescriptionFragment" />
+  <fragment
+        android:id="@+id/connectSensorFragment"
+        android:name="com.socketfit.androidapp.fragment.ConnectSensorFragment"
+        android:label="connectSensorFragment" />
+
+</navigation>

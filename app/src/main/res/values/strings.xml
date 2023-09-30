@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">SocketFit</string>
+    <string name="title_sensor_data">Sensor Data</string>
+    <string name="title_dashboard">FragmentDashboard</string>
+    <string name="title_share">Share</string>
+    <string name="title_settings">Settings</string>
+
+</resources>

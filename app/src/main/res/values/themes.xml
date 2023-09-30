@@ -1,0 +1,85 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.SocketFit" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/color10</item>
+        <item name="colorOnPrimary">@color/screen_back</item>
+        <item name="colorPrimaryContainer">@color/screen_back</item>
+        <item name="colorOnPrimaryContainer">@color/screen_back</item>
+        <item name="colorSecondary">@color/screen_back</item>
+        <item name="colorOnSecondary">@color/screen_back</item>
+        <item name="colorSecondaryContainer">@color/screen_back1</item>
+        <item name="colorOnSecondaryContainer">@color/md_theme_light_onSecondaryContainer</item>
+        <item name="colorTertiary">@color/md_theme_light_tertiary</item>
+        <item name="colorOnTertiary">@color/md_theme_light_onTertiary</item>
+        <item name="colorTertiaryContainer">@color/md_theme_light_tertiaryContainer</item>
+        <item name="colorOnTertiaryContainer">@color/md_theme_light_onTertiaryContainer</item>
+        <item name="colorError">@color/md_theme_light_error</item>
+        <item name="colorOnError">@color/md_theme_light_onError</item>
+        <item name="colorErrorContainer">@color/md_theme_light_errorContainer</item>
+        <item name="colorOnErrorContainer">@color/md_theme_light_onErrorContainer</item>
+        <item name="colorOutline">@color/md_theme_light_outline</item>
+        <item name="android:colorBackground">@color/md_theme_light_background</item>
+        <item name="colorOnBackground">@color/md_theme_light_onBackground</item>
+        <item name="colorSurface">@color/md_theme_light_surface</item>
+        <item name="colorOnSurface">@color/md_theme_light_onSurface</item>
+        <item name="colorSurfaceVariant">@color/md_theme_light_surfaceVariant</item>
+        <item name="colorOnSurfaceVariant">@color/md_theme_light_onSurfaceVariant</item>
+        <item name="colorSurfaceInverse">@color/md_theme_light_inverseSurface</item>
+        <item name="colorOnSurfaceInverse">@color/md_theme_light_inverseOnSurface</item>
+        <item name="colorPrimaryInverse">@color/md_theme_light_inversePrimary</item>
+        <item name="colorPrimaryDark">@color/screen_back</item>
+        <item name="screenTheme">@style/LayoutBackground</item>
+        <item name="screenSubTheme">@style/LayoutBackground.Light</item>
+        <item name="layoutBackground">@style/LayoutBackground</item>
+        <item name="materialSwitchStyle">@style/Widget.App.Switch</item>
+        <item name="checkboxStyle">@style/MyCheckboxStyle</item>
+        <item name="android:checkboxStyle">@style/MyCheckboxStyle</item>
+    </style>
+
+
+    <style name="Widget.App.Switch" parent="">
+
+        <item name="colorPrimary">@color/md_theme_dark_onPrimary</item>
+        <item name="colorSurfaceVariant">@color/md_theme_dark_onPrimaryContainer</item>
+    </style>
+
+
+    <style name="Widget.TextView.Bold" parent="Widget.MaterialComponents.TextView">
+        <item name="fontFamily">@font/roboto_bold</item>
+    </style>
+
+    <style name="Widget.TextView.Medium" parent="Widget.MaterialComponents.TextView">
+        <item name="fontFamily">@font/roboto_medium</item>
+    </style>
+    <style name="CustomDialog" parent="android:Theme.Dialog">
+        <item name="android:windowBackground">#4FACABAB</item>
+    </style>
+    <style name="Widget.TextView.Regular" parent="Widget.MaterialComponents.TextView">
+        <item name="fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="LayoutBackground" parent="Theme.SocketFit">
+        <item name="android:background">@drawable/bottom_view_style_top</item>
+        <item name="android:textColor">@color/md_theme_dark_scrim</item>
+    </style>
+
+    <style name="LayoutBackground.Light" parent="Theme.SocketFit">
+        <item name="android:background">?attr/colorPrimaryContainer</item>
+    </style>
+
+    <declare-styleable name="ScreenTheme">
+        <attr name="screenTheme" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="ScreenSubTheme">
+        <attr name="screenSubTheme" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="LayoutBackground">
+        <attr name="layoutBackground" format="reference" />
+    </declare-styleable>
+
+    <style name="MyCheckboxStyle" parent="Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="buttonTint">@color/black</item>
+    </style>
+</resources>
