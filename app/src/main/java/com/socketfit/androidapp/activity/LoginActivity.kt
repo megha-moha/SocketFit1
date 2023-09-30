@@ -51,7 +51,9 @@ class LoginActivity : AppCompatActivity() {
                 } else {
                     // Login failed: show an error message (e.g., with a Toast)
                     runOnUiThread {
-                        Toast.makeText(this@LoginActivity, "Invalid email or password", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(
+                            this@LoginActivity, "Invalid email or password", Toast.LENGTH_SHORT
+                        ).show()
                     }
                 }
             }

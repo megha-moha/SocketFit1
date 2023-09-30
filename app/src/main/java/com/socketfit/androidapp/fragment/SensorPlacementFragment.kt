@@ -25,9 +25,7 @@ class SensorPlacementFragment : Fragment() {
     private val binding get() = _binding!!
 
     override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
+        inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
     ): View {
 
         _binding = FragmentSensorPlacementBinding.inflate(inflater, container, false)
@@ -44,34 +42,37 @@ class SensorPlacementFragment : Fragment() {
             requireActivity().onBackPressed()
         }
         val btnContinue = view.findViewById<Button>(R.id.btnContinue)
-        btnContinue.setOnClickListener{
-            Toast.makeText(requireContext(),"Sensor Placement data saved successfully",Toast.LENGTH_SHORT).show()
+        btnContinue.setOnClickListener {
+            Toast.makeText(
+                requireContext(), "Sensor Placement data saved successfully", Toast.LENGTH_SHORT
+            ).show()
             requireActivity().onBackPressed()
         }
-        adapter = AdapterSensorPlacement(listOfPreferences, object :
-            OnPreferenceAdapterItemClickListener {
-            override fun onItemClick(position: Int) {
+        adapter = AdapterSensorPlacement(
+            listOfPreferences,
+            object : OnPreferenceAdapterItemClickListener {
+                override fun onItemClick(position: Int) {
 
-            }
+                }
 
-            override fun onItemClick(position: Int , flag : Boolean) {
-                showCustomLocationView(position , flag)
-            }
-        })
+                override fun onItemClick(position: Int, flag: Boolean) {
+                    showCustomLocationView(position, flag)
+                }
+            })
 
         binding.rvSensorPlacement.layoutManager = LinearLayoutManager(activity)
         binding.rvSensorPlacement.adapter = adapter
     }
 
-    fun showCustomLocationView(optionIndex : Int , flag : Boolean){
+    fun showCustomLocationView(optionIndex: Int, flag: Boolean) {
 
-        if(flag){
+        if (flag) {
 
             binding.clCustomLocation.visibility = View.VISIBLE
             binding.tvStaticText.visibility = View.VISIBLE
-            binding.tvSensorLocationName.text = "Sensor ${optionIndex+1} Location"
+            binding.tvSensorLocationName.text = "Sensor ${optionIndex + 1} Location"
 
-        }else{
+        } else {
 
             binding.clCustomLocation.visibility = View.GONE
             binding.tvStaticText.visibility = View.GONE

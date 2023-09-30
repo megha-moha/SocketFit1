@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
     android:background="@color/color3">
 
     <androidx.core.widget.NestedScrollView
@@ -39,12 +39,12 @@
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rvPhysicalDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_description"
                 android:layout_marginTop="20dp"
                 tools:itemCount="4"
-                tools:listitem="@layout/item_view_physical_description"
-                 android:layout_below="@+id/tv_description"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                tools:listitem="@layout/item_view_physical_description" />
 
 
         </RelativeLayout>

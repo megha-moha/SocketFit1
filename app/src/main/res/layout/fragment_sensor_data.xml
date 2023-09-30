@@ -3,65 +3,65 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
-        <FrameLayout
-            android:id="@+id/frame_layout"
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_sheet_layout">
+
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintBottom_toTopOf="@+id/bottom_sheet_layout">
+            android:layout_height="match_parent"
+            android:layout_margin="16dp">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_page_heading"
+                style="@style/Widget.TextView.Bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="start"
+                android:text="3D limb pressure map"
+                android:textColor="@color/md_theme_dark_scrim"
+                android:textSize="25sp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_description"
+                style="@style/Widget.TextView.Regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_page_heading"
+                android:layout_marginTop="10dp"
+                android:gravity="start"
+                android:text="Select pressure point to view current data"
+                android:textColor="@color/md_theme_dark_scrim"
+                android:textSize="12sp" />
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_margin="16dp">
+                android:layout_below="@+id/tv_description"
+                android:layout_margin="10dp"
+                android:paddingBottom="30dp">
 
-                <com.google.android.material.textview.MaterialTextView
-                    android:id="@+id/tv_page_heading"
-                    style="@style/Widget.TextView.Bold"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:gravity="start"
-                    android:text="3D limb pressure map"
-                    android:textColor="@color/md_theme_dark_scrim"
-                    android:textSize="25sp" />
-
-                <com.google.android.material.textview.MaterialTextView
-                    android:id="@+id/tv_description"
-                    style="@style/Widget.TextView.Regular"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/tv_page_heading"
-                    android:layout_marginTop="10dp"
-                    android:gravity="start"
-                    android:text="Select pressure point to view current data"
-                    android:textColor="@color/md_theme_dark_scrim"
-                    android:textSize="12sp" />
-
-                <RelativeLayout
-                    android:paddingBottom="30dp"
+                <ImageView
+                    android:id="@+id/iv_limb"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_below="@+id/tv_description"
-                    android:layout_margin="10dp">
+                    android:layout_gravity="center"
+                    android:src="@drawable/img_3d_limb" />
 
-                    <ImageView
-                        android:id="@+id/iv_limb"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_gravity="center"
-                        android:src="@drawable/img_3d_limb" />
-
-                    <ImageView
-                        android:id="@+id/iv_limb_points"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:src="@drawable/img_limb_points" />
-
-                </RelativeLayout>
-
+                <ImageView
+                    android:id="@+id/iv_limb_points"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/img_limb_points" />
 
             </RelativeLayout>
 
-        </FrameLayout>
+
+        </RelativeLayout>
+
+    </FrameLayout>
 
 </layout>
